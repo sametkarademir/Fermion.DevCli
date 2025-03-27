@@ -1,12 +1,6 @@
 using System.Security.Cryptography;
 
-namespace DevCLI.App.Core.Utils;
-
-public interface IRandomProvider
-{
-    int GetRandomInt(int minInclusive, int maxExclusive);
-    byte[] GetRandomBytes(int length);
-}
+namespace Fermion.DevCli.Command.Password.Services;
 
 public class RandomProvider : IRandomProvider, IDisposable
 {

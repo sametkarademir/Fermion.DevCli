@@ -1,4 +1,4 @@
-namespace DevCLI.App.Commands.Password;
+namespace Fermion.DevCli.Command.Password.Commands;
 
 public class PasswordOptions
 {

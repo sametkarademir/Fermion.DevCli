@@ -1,6 +1,6 @@
-using System.CommandLine;
+using Fermion.DevCli.Core.Commands;
 
-namespace DevCLI.App.Commands.Password;
+namespace Fermion.DevCli.Command.Password.Commands;
 
 public class PasswordCommand : BaseCommand
 {
@@ -16,9 +16,9 @@ public class PasswordCommand : BaseCommand
     public override string Name => "password";
     public override string Description => "Parola işlemleri için komutlar";
 
-    public override Command Configure()
+    public override System.CommandLine.Command Configure()
     {
-        var command = new Command(Name, Description);
+        var command = new System.CommandLine.Command(Name, Description);
         
         command.AddCommand(_generateCommand.Configure());
         command.AddCommand(_lengthCommand.Configure());

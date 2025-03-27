@@ -1,15 +1,16 @@
 using System.CommandLine;
+using Fermion.DevCli.Core.Commands;
 
-namespace DevCLI.App.Commands.Password;
+namespace Fermion.DevCli.Command.Password.Commands;
 
 public class LengthCommand : BaseCommand
 {
     public override string Name => "length";
     public override string Description => "Bir parolanın karakter sayısını belirler";
 
-    public override Command Configure()
+    public override System.CommandLine.Command Configure()
     {
-        var command = new Command(Name, Description);
+        var command = new System.CommandLine.Command(Name, Description);
         
         var passwordArgument = new Argument<string>(
             name: "password",

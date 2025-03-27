@@ -1,8 +1,7 @@
 using System.Text;
-using DevCLI.App.Commands.Password;
-using DevCLI.App.Core.Utils;
+using Fermion.DevCli.Command.Password.Commands;
 
-namespace DevCLI.App.Core.Services.Password;
+namespace Fermion.DevCli.Command.Password.Services;
 
 public class PasswordGeneratorService(IRandomProvider randomProvider) : IPasswordGeneratorService
 {

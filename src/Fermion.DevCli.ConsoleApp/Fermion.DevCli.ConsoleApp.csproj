@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+
+        <PackAsTool>true</PackAsTool>
+        <ToolCommandName>devcli</ToolCommandName>
+        <PackageId>DevCLI</PackageId>
+        <Version>0.0.2</Version>
+        <Authors>SametKarademir</Authors>
+        <Description>Geliştirici araçları için komut satırı uygulaması</Description>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Fermion.DevCli.Command.Password\Fermion.DevCli.Command.Password.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="System.CommandLine.Hosting" Version="0.4.0-alpha.22272.1" />
+    </ItemGroup>
+
+</Project>

@@ -1,6 +1,6 @@
-using DevCLI.App.Commands.Password;
+using Fermion.DevCli.Command.Password.Commands;
 
-namespace DevCLI.App.Core.Services.Password;
+namespace Fermion.DevCli.Command.Password.Services;
 
 public interface IPasswordGeneratorService
 {

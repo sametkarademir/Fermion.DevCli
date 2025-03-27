@@ -1,8 +1,8 @@
 using System.CommandLine;
-using DevCLI.App.Core.Services;
-using DevCLI.App.Core.Services.Password;
+using Fermion.DevCli.Command.Password.Services;
+using Fermion.DevCli.Core.Commands;
 
-namespace DevCLI.App.Commands.Password;
+namespace Fermion.DevCli.Command.Password.Commands;
 
 public class GenerateCommand(IPasswordGeneratorService passwordService) : BaseCommand
 {
@@ -11,9 +11,9 @@ public class GenerateCommand(IPasswordGeneratorService passwordService) : BaseCo
         public override string Name => "generate";
         public override string Description => "Güçlü ve güvenli parolalar oluşturur";
 
-        public override Command Configure()
+        public override System.CommandLine.Command Configure()
         {
-            var command = new Command(Name, Description);
+            var command = new System.CommandLine.Command(Name, Description);
             
             var lengthOption = new Option<int>(
                 aliases: new[] { "--length", "-l" },
