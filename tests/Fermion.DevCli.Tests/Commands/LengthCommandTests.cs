@@ -1,4 +1,7 @@
+using System.CommandLine;
+using System.CommandLine.Invocation;
 using Fermion.DevCli.Command.Password.Commands;
+using Xunit;
 using FluentAssertions;
 
 namespace Fermion.DevCli.Tests.Commands;

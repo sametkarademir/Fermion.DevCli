@@ -1,6 +1,8 @@
+using System.CommandLine;
 using Fermion.DevCli.Command.Password.Commands;
 using Fermion.DevCli.Command.Password.Services;
 using Moq;
+using Xunit;
 using FluentAssertions;
 
 namespace Fermion.DevCli.Tests.Commands;
